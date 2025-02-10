@@ -1,0 +1,1014 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----------ScrollBar-------- */
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-themeMustard;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-themeMustard;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+body {
+  @apply bg-themePurple;
+}
+
+.paragraph {
+  @apply text-sm font-bold font-body text-white;
+}
+
+p {
+  @apply text-xl font-normal;
+}
+
+.text-body {
+  @apply font-body;
+}
+
+.text-heading {
+  @apply font-heading;
+}
+
+.container {
+  @apply max-w-[1200px] w-full m-auto px-4;
+}
+
+.animate {
+  transition: 1.5s all ease-in-out;
+}
+
+.Team_Popup {
+  overflow-y: scroll;
+}
+
+/* Header Css */
+
+.headerlogo img {
+  @apply opacity-100
+}
+
+.logohidden .headerlogo img{
+  @apply opacity-0
+}
+
+.menu_list a {
+  @apply text-right inline-block 
+  text-[70px] leading-[80px] transition-all;
+}
+
+.menu_list a:hover {
+  @apply text-right inline-block text-[70px] leading-[80px] text-white transition-all;
+}
+
+.social_icons svg {
+  @apply text-black bg-themeMustard w-[50px] h-[50px] p-4 transition-all;
+}
+
+.social_icons a {
+  @apply !rounded-full overflow-hidden inline-block  w-[50px] h-[50px];
+}
+
+.social_icons svg:hover {
+  @apply bg-white transition-all;
+}
+
+.Main_Section {
+  @apply w-full h-full overflow-hidden;
+}
+
+.Bottom_bar {
+  @apply mt-[100px];
+}
+
+/* Header Css Close */
+
+/* Home Page Css */
+
+.PhoneNumberField input {
+  @apply !bg-transparent !border-none !py-[10px] !px-[15px] xl:px-6 xl:!py-[17.5px] !h-auto !w-full !pl-[50px] text-[#bd8f2f] lg:!text-[16px] !text-[13px] placeholder-[#BD8F2F]
+}
+
+.PhoneNumberField .flag-dropdown.open .selected-flag {
+  @apply !bg-transparent;
+}
+
+.PhoneNumberField .flag-dropdown {
+  @apply !bg-transparent !border-none
+}
+
+.PhoneNumberField .flag-dropdown .selected-flag:hover {
+  @apply !bg-transparent
+}
+
+.PhoneNumberField .flag-dropdown .country-list .country-name{
+  @apply !text-black
+}
+
+/* .PhoneNumberField .flag-dropdown .country-list {
+  @apply 
+} */
+
+.Overlay_text {
+  @apply pt-[160px] bg-themePurple h-full absolute w-full -z-[1];
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.video-Section {
+  clip-path: circle(10% at center 70%);
+  transition: 2s all ease-in-out;
+  @apply h-full flex flex-col items-center justify-center pt-[170px];
+}
+
+.Inner_logo {
+  @apply mb-[20px] pt-[0px];
+  transition: 0.5s all linear;
+}
+
+.scrolled_class .video-Section {
+  clip-path: circle(100%);
+  transition: 2s all ease-in-out;
+  padding-top: 0px;
+}
+
+/* .spaceEnd {
+  @apply hidden
+} */
+
+.scrolled_class .spaceEnd {
+  @apply block;
+}
+
+.scrolled_class .Inner_logo {
+  @apply mb-[50px] p-0;
+  transition: 0.5s all linear;
+}
+
+.leadership ul:nth-child(2) {
+  @apply max-w-48;
+}
+
+.Banner {
+  @apply fixed top-0;
+}
+
+.overlay_section {
+  @apply z-[1];
+}
+
+.team_member {
+  filter: saturate(0);
+  transition: 0.5s all ease-in-out;
+}
+
+.team_member:hover {
+  filter: saturate(1);
+  transition: 0.5s all ease-in-out;
+}
+.Solo_Member {
+  filter: saturate(0);
+  transition: 0.5s all ease-in-out;
+}
+.Solo_Member:hover {
+  filter: saturate(1);
+  transition: 0.5s all ease-in-out;
+}
+
+.card {
+  width: calc(33% - 30px);
+}
+
+.News {
+  /* width: calc(33% - 20px); */
+  transition: 0.5s all ease-in-out;
+  @apply min-h-[280px];
+}
+
+.News:hover {
+  /* width: calc(34% - 20px); */
+  transition: 0.5s all ease-in-out;
+}
+
+.News_Section,
+.legacy_tabs {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.News::before {
+  content: "";
+  @apply absolute bg-black opacity-40 w-full h-full left-0 right-0 top-0 bottom-0 transition-all;
+}
+
+.Url_icon {
+  @apply text-right flex justify-end;
+}
+
+.Url_icon svg {
+  @apply text-white;
+}
+
+/* Home Page Css End */
+
+/* Footer Css Start */
+
+.Our_Newsletter input {
+  @apply outline-none w-[500px] text-themeMustard border-2 border-themeMustard bg-[#bd8f2f14] rounded-[50px] pr-[180px] pl-5 py-5;
+}
+
+.Our_Newsletter input::placeholder {
+  /* color: #bd8f2f; */
+  @apply text-themeMustard;
+}
+
+.Our_Newsletter button {
+  @apply rounded-[50px] absolute top-[10px] right-[10px] px-10 py-3;
+}
+
+.btn {
+  @apply bg-themeMustard font-body rounded-[50px] whitespace-nowrap h-fit text-white px-10 py-3 border border-themeMustard transition-all;
+}
+
+.btn:hover {
+  @apply bg-transparent text-themeMustard transition-all;
+}
+
+.Newsletter {
+  @apply relative mx-0 mt-[30px] mb-[50px] max-w-fit;
+}
+
+.Info-Section li {
+  @apply mr-[10px] !font-light text-base;
+}
+
+.card p {
+  @apply min-h-[70px];
+}
+.fixed_nav {
+  @apply bg-themePurple;
+  transition: 0.5s all ease-in-out;
+}
+
+/* Footer Css Close */
+
+/* Portfolio Page Css */
+
+.Slider_Section .swiper-pagination {
+  @apply !bottom-[70px] max-w-[1200px] px-4 py-0 right-0 left-0 m-auto flex;
+}
+
+.Slider_Section .swiper-pagination-bullet {
+  @apply w-full !rounded-none bg-white opacity-60 !m-0;
+}
+
+.Slider_Section .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply opacity-100 !m-0;
+}
+
+.Slider_Section .swiper-button-prev,
+.Slider_Section .swiper-button-next {
+  @apply left-auto right-0 w-[60px] h-[60px] border-2 border-white rounded-[50px] flex justify-center items-center transition-all;
+}
+
+.Slider_Section .swiper-button-prev:hover,
+.Slider_Section .swiper-button-next:hover {
+  @apply transition-all bg-themeMustard;
+}
+
+.Slider_Section .swiper-button-next {
+  @apply -top-[80px];
+}
+
+.Slider_Section .swiper-button-prev::after,
+.Slider_Section .swiper-button-next::after {
+  @apply !text-2xl !font-medium !text-white;
+}
+
+.bg-overlay {
+  @apply relative transition-all;
+}
+
+.bg-overlay::before {
+  content: "";
+  @apply absolute bg-themePurple opacity-60 w-full h-full left-0 right-0 top-0 bottom-0 transition-all;
+}
+
+.portfolio_Cards:hover::before {
+  content: "";
+  @apply absolute bg-themePurple opacity-60 w-full h-full left-0 right-0 top-0 bottom-0 transition-all;
+}
+
+.portfolio_Cards::before {
+  content: "";
+  @apply absolute bg-transparent opacity-60 w-full h-full left-0 right-0 top-0 bottom-0 transition-all;
+}
+
+.portfolio_Cards {
+  @apply relative transition-all border-x-[10px] border-themePurple;
+}
+
+.portfolio_Cards:hover {
+  @apply w-[40%];
+  transition: 1s all ease-in-out;
+}
+
+.portfolio_Cards {
+  @apply w-1/3;
+  transition: 1s all ease-in-out;
+}
+
+.location_Box,
+.ContactBanner {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+
+.location_Box .location-content {
+  padding: 8rem 0px 200px;
+}
+
+.location_Box .location-content h5,
+.location_Box .location-content p {
+  @apply max-w-[500px];
+}
+
+.ContactBanner::before {
+  content: "";
+  @apply w-full lg:w-[50%] xl:w-[45%] absolute top-0 bottom-0 right-0 h-full bg-white;
+}
+
+.Bottom_Bar {
+  @apply py-5 z-[999];
+}
+
+.Arrow_Icon {
+  @apply border flex items-center justify-center border-white rounded-[50px] bg-[#ffffff14] w-[70px] h-[70px];
+}
+
+.Arrow_Icon svg {
+  @apply text-[40px];
+}
+
+.Home_Portfolio video,
+.Home_Portfolio img {
+  transition: 1s all ease-in-out;
+  @apply m-auto max-w-full;
+}
+
+.Home_Portfolio.visible video,
+.Home_Portfolio.visible img {
+  @apply max-w-[1200px] px-4;
+  transition: 1s all ease-in-out;
+}
+
+.Portfolio_Banner video,
+.Portfolio_Banner img {
+  transition: 1s all ease-in-out;
+  clip-path: inset(0vh 0vw);
+  @apply m-auto max-w-full;
+}
+
+.About_banner video,
+.About_banner img {
+  transition: 1s all ease-in-out;
+  /* clip-path: inset(0vh 0vw); */
+  @apply m-auto max-w-full;
+  object-fit: contain;
+  transition: 1s all ease-in-out;
+}
+
+.Portfolio_Banner.scrolled {
+  @apply !h-[400px];
+  transition: 1s all ease-in-out;
+}
+
+.About_banner.scrolled {
+  @apply !h-[400px];
+  transition: 1s all ease-in-out;
+}
+
+.Portfolio_Banner,
+.About_banner,
+.About_banner h1 {
+  transition: 1s all ease-in-out;
+}
+
+.Portfolio_Banner.scrolled video,
+.Portfolio_Banner.scrolled img {
+  @apply max-w-[1200px] px-4;
+  transition: 1s all ease-in-out;
+  clip-path: inset(11vh 0vw 12vh);
+}
+
+.About_banner.scrolled video,
+.About_banner.scrolled img {
+  @apply max-w-[1200px] px-4;
+  transition: 1s all ease-in-out;
+  /* clip-path: inset(16vh 0vw 0vh); */
+  object-fit: contain;
+  height: 300px;
+  bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.Portfolio_Banner.scrolled .Portfolio_Content {
+  @apply top-[230px];
+  transition: 1s all ease-in-out;
+}
+
+.Portfolio_Banner .Portfolio_Content {
+  @apply top-[40%];
+  transition: 1s all ease-in-out;
+}
+
+.About_banner h1 {
+  @apply -bottom-[120px];
+  transition: 1s all ease-in-out;
+}
+
+.card svg {
+  @apply !mb-0;
+}
+
+.popup_icon svg {
+  @apply rounded-[50px];
+}
+
+.Tabs_Bg {
+  background: rgb(46, 14, 29);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 14, 29, 1) 40%,
+    rgba(46, 14, 29, 0.5130427170868348) 80%
+  );
+}
+
+.header {
+  box-shadow: -4px 1px 19px -4px #2e0e1d;
+}
+
+.Home_Swiper_Navigation div:hover svg {
+  @apply text-themePurple transition-all;
+}
+
+/* .Home_Team .ReadMore {
+  @apply hidden;
+} */
+
+.Gallery_Block p {
+  @apply text-[17px];
+}
+
+.Home_Team .card {
+  @apply flex flex-col;
+}
+
+.About_Team .card p {
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Team_Popup p {
+  white-space: wrap !important;
+  overflow: auto;
+  text-overflow: auto;
+}
+
+.Contact_Page form .react-tel-input input{
+  @apply w-full text-[13px] lg:text-[16px] !text-themeMustard !pl-[60px] !h-full !px-[15px] xl:px-6 xl:py-[20.5px] border-[2px] border-[#BD8F2F] rounded-[40px] bg-[#BD8F2F14] mb-[15px] xl:mb-8 placeholder-[#BD8F2F];
+}
+
+.Contact_Page form .react-tel-input .flag-dropdown {
+  @apply bg-transparent border-none outline-none px-[10px];
+}
+
+.Contact_Page form input {
+  @apply !mb-0;
+}
+
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+}
+
+/* Portfolio Page Css Close */
+
+/* Responsive Css Start */
+
+@media (max-width: 1610px) {
+  /* .Gallery_Block .mySwiper .swiper-wrapper {
+    @apply mx-auto;
+  } */
+}
+
+@media(max-width:1280px){
+  .Contact_Page form .react-tel-input input {
+    padding: 13px 20px;
+  }
+}
+
+@media (max-height: 900px) {
+  .Contact_Page {
+    @apply overflow-y-scroll;
+  }
+
+  .Contact_Page input {
+    padding: 10px 30px;
+  }
+  .Social_Box {
+    margin-top: 0px !important;
+  }
+  .Contact_Page .half-Section {
+    gap: 90px !important;
+  }
+}
+@media (max-height: 760px) {
+  .Main_Navigation .inner_menu {
+    @apply h-full overflow-y-scroll;
+  }
+
+  .Main_Navigation .inner_menu .Menu_items {
+    @apply pb-12;
+  }
+  .Contact_Page {
+    @apply overflow-y-scroll;
+  }
+}
+
+@media (max-width: 1660px) {
+  .Gallery_Block {
+    @apply !pl-[80px];
+  }
+}
+
+@media (max-width: 1600px) {
+  .Gallery_Block {
+    @apply !pl-[10px];
+  }
+
+  .Gallery_Block p {
+    @apply text-[16px] leading-[1.2];
+  }
+}
+
+@media (max-width: 1400px) {
+  .Gallery_Block {
+    @apply !pl-[10px];
+  }
+
+  .Portfolio_Banner.scrolled .Portfolio_Content {
+    @apply top-[230px];
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .Info-Section li {
+    @apply text-base mr-0;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+
+  
+
+  .Main_Bar h2 {
+    @apply text-[36px];
+  }
+
+  .Main_Bar p {
+    @apply text-[16px] max-w-[120px];
+  }
+}
+
+@media (max-width: 1300px) {
+  .Contact_Page .half-Section {
+    @apply w-1/2;
+  }
+
+  .ContactBanner::before {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Info-Section {
+    @apply w-full xl:w-[170px] xl:max-w-[200px] flex-col;
+  }
+
+  .Team_Popup p {
+    @apply text-xl mb-5 !min-h-full;
+  }
+}
+@media (max-width: 1300px) {
+  .Bottom_Bar {
+    @apply !hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .full-section {
+    @apply w-full;
+  }
+
+  .team_Section {
+    @apply gap-y-12;
+  }
+
+  .Contact_Page h1 {
+    @apply text-[60px];
+  }
+
+  .Portfolio_Banner.scrolled video,
+  .Portfolio_Banner.scrolled img {
+    clip-path: inset(11vh 0vw 7vh);
+  }
+
+  .Portfolio_Banner.scrolled .Portfolio_Content {
+    top: 60%;
+  }
+
+  /* .About_banner.scrolled video,
+  .About_banner.scrolled img {
+    clip-path: inset(10vh 0vw 0vh);
+  } */
+
+  .Gallery_Block {
+    @apply !pl-[10px];
+  }
+}
+
+@media (max-width: 991px) {
+  .Team_Popup .inner_container {
+    @apply flex-col-reverse gap-10 overflow-y-scroll;
+  }
+
+  .Team_Popup .inner_container .inner_section {
+    @apply w-full;
+  }
+
+  .Team_Popup p {
+    @apply !min-h-fit;
+  }
+
+  .menu_list a {
+    @apply lg:text-[70px] lg:leading-[90px];
+  }
+
+  .Bottom_bar p {
+    @apply !text-sm;
+  }
+
+  .Main_Section .gap-7 {
+    @apply gap-3;
+  }
+
+  .content_block p,
+  .content_block li {
+    @apply !text-base;
+  }
+
+  .footer .menu_list {
+    @apply w-full flex-row flex-wrap gap-14 justify-center py-8 mt-12 border-l-0 border-r-0 border border-themeMustard;
+  }
+
+  .footer .Content_Section {
+    @apply w-full;
+  }
+  .footer .menu_list a {
+    @apply text-3xl;
+  }
+  .footer .Bottom_bar {
+    @apply mt-10 justify-between gap-0;
+  }
+
+  .Banner h1 {
+    @apply text-[90px] leading-[1];
+  }
+
+  .Contact_Page h1 {
+    @apply text-[40px];
+  }
+
+  .half-Section {
+    @apply w-1/2;
+  }
+
+  .half-Section .Social_Box {
+    @apply w-full;
+  }
+
+  .ContactBanner::before {
+    @apply w-1/2;
+  }
+
+  .portfolio_Button {
+    @apply static !text-[45px] mt-6;
+  }
+
+  .portfolio_Button svg {
+    @apply !text-[22px];
+  }
+
+  .Arrow_Icon {
+    @apply w-[50px] h-[50px];
+  }
+
+  .Home_Portfolio video {
+    @apply h-[400px];
+  }
+
+  .Portfolio_Banner.scrolled video,
+  .Portfolio_Banner.scrolled img {
+    clip-path: inset(11vh 0vw 12vh);
+  }
+
+  .Portfolio_Banner.scrolled .Portfolio_Content {
+    top: 250px;
+  }
+
+  /* .About_banner.scrolled video,
+  .About_banner.scrolled img {
+    clip-path: inset(12vh 0vw 0vh);
+  } */
+   
+
+  .About_banner h1 {
+    bottom: -55px;
+  }
+
+  .legacy_tabs li {
+    @apply text-[26px] leading-[2];
+  }
+
+  .legacy_tabs p {
+    @apply text-[20px] leading-[1.5];
+  }
+
+  .Gallery_Block {
+    @apply !pl-[0px];
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .scroll-section {
+    overflow-x: scroll;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .News_Scroll .News {
+    @apply w-full;
+  }
+
+  .News_Scroll {
+    @apply flex-wrap gap-8;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .svarnMobile {
+    @apply flex justify-end items-end
+  }
+
+  .Contact_Page .half-Section {
+    @apply w-full;
+  }
+
+  .Portfolio_Banner.scrolled video,
+  .Portfolio_Banner.scrolled img {
+    clip-path: inset(13vh 0vw 12vh);
+  }
+
+  .Portfolio_Banner.scrolled .Portfolio_Content {
+    top: 220px;
+  }
+
+  .social_icons {
+    @apply w-full justify-end;
+  }
+
+  .Bottom_bar {
+    @apply mt-[50px];
+  }
+
+  .menu_list a {
+    @apply text-3xl;
+  }
+  
+  .menu_list {
+    @apply gap-4
+  }
+
+  .Our_Newsletter input {
+    @apply bg-[#bd8f2f14] border-2 border-themeMustard text-themeMustard w-full outline-none rounded-[50px] py-5 pr-[180px] pl-5;
+  }
+
+  .information_block .social_icons {
+    @apply justify-start;
+  }
+
+  .footer .menu_list a {
+    @apply text-3xl w-full text-left;
+  }
+
+  .footer .Bottom_bar {
+    @apply flex-col items-start gap-5;
+  }
+
+  .information_block {
+    @apply items-baseline;
+  }
+
+  .Banner h1 {
+    @apply text-[40px] leading-[1.2];
+  }
+
+  .card {
+    @apply w-[60%];
+  }
+
+  .scroll-section {
+    @apply flex-nowrap whitespace-nowrap overflow-hidden overflow-x-scroll pb-5;
+  }
+
+  .scroll-section .card p {
+    @apply whitespace-normal;
+  }
+
+  /* width */
+  .scroll-section::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  /* Track */
+  .scroll-section::-webkit-scrollbar-track {
+    @apply bg-gray-400 h-[8px];
+  }
+
+  /* Handle */
+  .scroll-section::-webkit-scrollbar-thumb {
+    /* background: #888; */
+    @apply bg-themePurple;
+  }
+
+
+  .scroll-section::-webkit-scrollbar {
+    display: inherit;
+}
+
+.scroll-section:hover::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-section:hover::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4); 
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.scroll-section:hover::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(100,100,100,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+  .card p {
+    @apply min-h-[100px];
+  }
+
+  .team_member {
+    @apply h-full object-cover;
+  }
+
+  .Overlay_text p {
+    @apply px-3 py-0 text-xl leading-[1.5];
+  }
+
+  .footer .menu_list {
+    @apply gap-4;
+  }
+
+  .location_Box .location-content {
+    @apply py-[80px] px-0;
+  }
+
+  .location_Box {
+    background-color: #fff !important;
+  }
+
+  .Contact_Page .social_icons {
+    @apply justify-start;
+  }
+
+  .ContactBanner::before {
+    @apply top-auto bottom-0 h-[48%] w-full z-[9];
+  }
+
+  .ContactBanner {
+    @apply overflow-auto h-full;
+  }
+
+  .Contact_Page div {
+    @apply w-full;
+  }
+
+  .Contact_Page {
+    @apply static z-[9] pb-[80px] lg:pb-[130px];
+  }
+
+  .ContactBanner video {
+    @apply absolute;
+  }
+
+  .portfolio_Button {
+    @apply static !text-[30px] mt-4;
+  }
+
+  .portfolio_Button svg {
+    @apply !text-[18px];
+  }
+
+  .Arrow_Icon {
+    @apply w-[36px] h-[36px];
+  }
+
+  .Home_Portfolio video {
+    @apply h-[400px];
+  }
+
+  .custom-navigation-wrapper {
+    @apply hidden;
+  }
+
+  /* .About_banner.scrolled video,
+  .About_banner.scrolled img {
+    clip-path: inset(13vh 0vw 0vh);
+  } */
+
+  .legacy_tabs li {
+    @apply !p-0 !border-none whitespace-nowrap;
+  }
+
+  .Items_Card .portfolio_Cards {
+    width: 100%;
+  }
+
+  .team_Section .card {
+    @apply flex flex-col justify-between;
+  }
+
+  .leadership ul:nth-child(2) {
+    @apply max-w-full;
+  }
+
+  .About_banner.scrolled video,
+  .About_banner.scrolled img {
+    height: auto;
+  }
+
+  .About_Team .card p,
+  .scroll-section .card p {
+    /* white-space: nowrap !important; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .legecy_Tabs .Tabs_Box {
+    @apply !border-none;
+  }
+
+  .scroll-section.legecy_Tabs::-webkit-scrollbar-thumb {
+    /* background: #888; */
+    @apply bg-white;
+  }
+}
+
+/* Responsive Css Close */

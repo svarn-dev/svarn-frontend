@@ -1,0 +1,28 @@
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-direction: row !important;
+  align-items: flex-end;
+}
+
+.Gallery_Image img {
+  @apply !h-[230px];
+}
+
+.Bottom_Bar .Main_Bar  ul div:last-child {
+  @apply hidden;
+}
+
+
+.custom-navigation-wrapper svg  {
+  @apply text-white hover:text-themePurple  transition-all text-[10px];
+}
+
+.News_Section .swiper-button-next::after,.News_Section .swiper-button-prev::after {
+  @apply hidden;
+}
+
+@media(max-width:767px){
+  .News_Section .custom-navigation-wrapper {
+    @apply flex;
+  }
+}
