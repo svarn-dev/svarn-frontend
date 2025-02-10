@@ -147,6 +147,7 @@ const about = ({ AboutData, YoastData, hfdata }) => {
   return (
     <>
       <Head>
+      <meta name="robots" content="index, follow" />
         <title>
           {YoastData &&
           YoastData.yoast_head_json &&
